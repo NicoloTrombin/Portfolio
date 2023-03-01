@@ -1,0 +1,177 @@
+<!-- About me -->
+<section class="wrapper" id="career">
+    <div class="about-me">
+        <div class="about-me-title">
+            <h3>About me</h3>
+        </div>
+        <div class="about-me-description">
+            <h5>Who am I ?</h5>
+        </div>
+        <div class="about-me-content">
+            <p>
+                <strong style="font-weight: 800;">Software Developer,</strong>  
+                passionate about Frontend & Graphic Design.
+                I ❤ creating unique websites that provides a dynamic, intuitive and satisfying user experience.
+                You can see some of my work in the <a href="#">projects section</a> <i class='bx bx-pointer'></i>
+            </p> <br>
+            <p>
+                Well-organised person, problem solver, responsable and commited to my work. I'm constantly learning new technologies and tools to improve my skills.
+            </p> <br>
+            <p>
+                Interested in the entire frontend spectrum and working on ambitious projects with positive people. <br>
+                <a href="#">Let's make something special.</a> <i class='bx bx-pointer'></i>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="wrapper1">
+   <div class="skills">
+    <div class="skills-header"> 
+        <div class="skills-title">
+            <h3>Skills</h3>
+        </div>
+        <div class="skills-description">
+            <h5>My knowledge</h5>
+        </div>
+    </div>
+    <div class="skills-content">
+       <div class="frontend-skills">
+            <div class="icon-skills">
+                <i class='bx bx-code-alt'></i>
+            </div>
+            <div class="box-skills">
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JavaScript</button>
+                <button>TypeScript</button>
+                <button>Angular</button>  
+            </div>
+        </div>
+        <div class="backend-skills">
+            <div class="icon-skills">
+                <i class='bx bx-data'></i>
+            </div>
+            <div class="box-skills">
+                <button>Java</button>
+                <button>MySQL</button>
+            </div>
+        </div>
+        <div class="tools-skills">
+            <div class="icon-skills">
+                <i class='bx bx-wrench' ></i>
+            </div>
+            <div class="box-skills">
+                <button>GitHub</button>
+                <button>Postman</button>
+                <button>Figma</button>
+                <button>Asana</button>
+                <button>Scrum</button>
+            </div>
+        </div> 
+    </div>
+   </div> 
+
+<!-- Career -->
+    <div class="wrapper2">
+        <div class="career">
+            <div class="career-header"> 
+                <div class="career-title">
+                    <h3>Career</h3>
+                </div>
+                <div class="career-description">
+                    <h5>Studies & Jobs</h5>
+                </div>
+            </div>
+            <div class="career-studies-jobs">
+                <a class="students" (click)="studiesShow()" 
+                   [ngClass]="{ 'borderBottom-studies' : studies == true }">
+                    <i class='bx bxs-graduation'></i>
+                    Studies
+                    <i class='bx bx-pointer'></i>
+                </a>
+                <a class="jobs" (click)="jobsShow()"
+                   [ngClass]="{ 'borderBottom-jobs' : jobs == true }">
+                    <i class='bx bxs-briefcase'></i>
+                    Jobs
+                    <i class='bx bx-pointer'></i>
+                </a>
+            </div>
+            <div class="career-content">
+                <div class="studies-content" *ngIf="studies">
+                    <div class="studies-content-1">
+                        <div class="studies-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline"></div>
+                        </div>
+                        <div class="studies-content-information">
+                            <div class="studies-content-title">
+                                <h4>Generation Italy</h4>
+                            </div>
+                            <div class="studies-content-date">
+                                <h5>Octuber 2022 - February 2023</h5>
+                            </div>
+                            <div class="studies-content-position">
+                                <h4>Junior Developer</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studies-content-2">
+                        <div class="studies-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline"></div>
+                        </div>
+                        <div class="studies-content-information">
+                            <div class="studies-content-title">
+                                <h4>English Certificate</h4>
+                            </div>
+                            <div class="studies-content-date">
+                                <h5>February 2019 - November 2019</h5>
+                            </div>
+                            <div class="studies-content-position">
+                                <h4>C2 Certificate</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studies-content-3">
+                        <div class="studies-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline"></div>
+                        </div>
+                        <div class="studies-content-information">
+                            <div class="studies-content-title">
+                                <h4>High School</h4>
+                            </div>
+                            <div class="studies-content-date">
+                                <h5>September 2016 - April 2018</h5>
+                            </div>
+                            <div class="studies-content-position">
+                                <h4>Social science & Business diploma</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jobs-content" *ngIf="jobs">
+                    <div class="jobs-content-1">
+                        <div class="jobs-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline1"></div>
+                        </div>
+                        <div class="jobs-content-information">
+                            <div class="jobs-content-title">
+                                <h4>Open Market</h4>
+                            </div>
+                            <div class="jobs-content-date">
+                                <h5>February 2023 - Currently ongoing</h5>
+                            </div>
+                            <div class="jobs-content-position">
+                                <h4>Junior Developer</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
