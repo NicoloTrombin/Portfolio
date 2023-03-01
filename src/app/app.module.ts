@@ -9,6 +9,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 // Import ngxHideOnScrollModule
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HeaderComponent,
     HomePageComponent,
     AboutPageComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
