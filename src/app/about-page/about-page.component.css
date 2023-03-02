@@ -126,7 +126,7 @@ section {
 .hline1{
     display: block;
     border-bottom: solid 2px #284184;
-    width: 44.3vw;
+    width: 43.8vw;
     margin-left: .7rem;
     margin-right: .7rem;
 }
@@ -280,9 +280,6 @@ section {
         height: 100%;
         margin: 0 auto;
     }
-    .wrapper1 {
-        margin-top: 5rem;
-    }
     .wrapper2 {
         width: 100%;
     }
@@ -295,7 +292,6 @@ section {
     }
     .career-studies-jobs a{
         display: flex;
-        margin-left: 1rem;
     }
     .career-content {
         margin-left: 2rem;
@@ -366,26 +362,17 @@ section {
         align-items: center;
         flex-wrap: wrap;
     }
-    .career-content {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
 }
 
 @media(max-width: 390px) {
     .career-content {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-}
-
-@media(max-width: 290px) {
-    .studies-content {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .jobs-content {
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .career-studies-jobs .bx-pointer {
+        display: none;
+    }
+    .career-studies-jobs {
+        gap: 1rem;
     }
 }

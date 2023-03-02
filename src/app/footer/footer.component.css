@@ -80,8 +80,12 @@ footer {
     margin-bottom: 2rem;
 }
 
-@media(max-width: 380px) {
+@media(max-width: 418px) {
     .footer-thanks-message h3{
+        text-align: center;
+    }
+    .author h4 {
+        position: initial;
         text-align: center;
     }
 }
