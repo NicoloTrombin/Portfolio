@@ -20,18 +20,23 @@
             </div>
         </div>
         <div class="contact-me-part2">
-            <div class="form">
-                <input type="text" name="fullName" placeholder="Full name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" rows="5" placeholder="Message"></textarea>
-            </div>
-            <div class="form-btn">
-                <button>
-                    <i class='bx bx-paper-plane'></i>
-                    Send
-                </button>
-            </div>
+            <form action="https://formsubmit.co/nikitrombin744@gmail.com" method="POST">
+                <div class="form">
+                    <input type="text" name="name" placeholder="Full name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                </div>
+                <div class="form-btn">
+                    <button type="submit">
+                        <i class='bx bx-paper-plane'></i>
+                        Send
+                    </button>
+                </div>
+            </form>
+            
         </div>
     </div>
 </section>

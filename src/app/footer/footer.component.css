@@ -1,0 +1,87 @@
+footer {
+    width: 100%;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .hline {
+    border-top: 2px solid ;
+    width: 100%;
+}
+
+.footer-thanks-message h3 {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.footer-contact-btn button {
+    background-color: #284184;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px 12px 10px 12px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.footer-contact-btn button:hover {
+    transform: scale(1.1);
+}
+
+.footer-social-media {
+    margin-top: 2rem;
+}
+
+.footer-social-media .sm-message h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-social-media .sm-icons i {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #9fd3c7;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.sm-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.footer-social-media .sm-icons i:hover {
+    transform: scale(1.1);
+    color: #284184;
+}
+
+.author h4{
+    position: absolute;
+    left: 10%;
+}
+
+.author {
+    margin: auto;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 380px) {
+    .footer-thanks-message h3{
+        text-align: center;
+    }
+}
