@@ -70,7 +70,7 @@ section {
 
 .form input:focus {
     outline: 0;
-    border: 1.5px solid cornflowerblue;
+    border: 2px solid cornflowerblue;
 }
 
 .form input::placeholder {
@@ -147,8 +147,6 @@ section {
     .contact-me {
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
-        margin-right: 2rem;
     }
     .information-btn {
         display: flex;
@@ -171,16 +169,39 @@ section {
 }
 
 @media(max-width: 500px) {
+    .contact-me-part2 {
+        width: 100%;
+        margin: 0 auto;
+    }
     .form {
-        display: inline-block;
-    }
-    .form input {
         width: 100%;
-        margin-top: .5rem;
+        margin: 0 auto;
+        margin-top: 1.5rem;
     }
-    .form textarea {
+    .form input, .form textarea {
         width: 100%;
-        margin-top: .5rem;
+        height: auto;
+        margin-top: .3rem;
+    }
+    .form-btn button {
+        width: 100%;
+    }
+}
+
+@media(max-width:320px) {
+    .contact-me-part1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .information-email {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin-top: .8rem;
+        gap: 0;
+    }
+    .information-email i {
+        font-size: 1.8rem;
     }
 }
 
