@@ -1,12 +1,12 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit{
     slideIndex = 1;
     slideIndex1 = 1;
     slideIndex2 = 1;
@@ -15,6 +15,11 @@ export class ProjectsComponent {
       this.showSlides(this.slideIndex);
       this.showSlides1(this.slideIndex1);
       this.showSlides2(this.slideIndex2);
+      
+      Aos.init({
+        offset: 400,
+        duration: 1000
+      });
      }
 
      // Thumbnail image controls
