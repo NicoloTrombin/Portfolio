@@ -127,18 +127,68 @@ img {
     display: none;
 }
 
+.prev-next-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 3.5rem;
+    margin-top: .8rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #bbb; 
+}
+
+.active, .dot1:hover {
+    background-color: #bbb; 
+}
+
+.active, .dot2:hover {
+    background-color: #bbb; 
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .6} 
     to {opacity: 1}
-  }
+}
 
-  /*** Media Queries ***/
-  @media(max-width: 1000px) {
+/*** Media Queries ***/
+@media(max-width: 1000px) {
     .projects-content {
         display: flex;
         justify-content: center;
@@ -194,9 +244,15 @@ img {
     .projects-info-footer-icon i {
         font-size: 2.2rem;
     }
-  }
+    .prev-next-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
 
-  @media(max-width: 476px) {
+@media(max-width: 476px) {
     .projects-content {
         display: flex;
         align-items: center;
@@ -230,13 +286,13 @@ img {
         justify-content: center;
         align-items: center;
     }
-  }
+}
 
-  @media(max-width: 360px) {
+@media(max-width: 360px) {
     .projects-info-title {
         margin-top: 2rem;
     }
     .projects-information .projects-info-title h3 {
         font-size: 1.4rem;
     }
-  }
+}
