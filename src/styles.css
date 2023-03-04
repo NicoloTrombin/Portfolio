@@ -17,6 +17,10 @@
     z-index: -999;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #stars {
     width: 1px;
     height: 1px;
