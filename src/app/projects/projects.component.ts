@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as Aos from 'aos';
 
 @Component({
   selector: 'app-projects',
@@ -15,11 +14,6 @@ export class ProjectsComponent implements OnInit{
       this.showSlides(this.slideIndex);
       this.showSlides1(this.slideIndex1);
       this.showSlides2(this.slideIndex2);
-      
-      Aos.init({
-        offset: 400,
-        duration: 1000
-      });
      }
 
      // Thumbnail image controls
