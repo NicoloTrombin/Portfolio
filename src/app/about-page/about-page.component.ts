@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Aos from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about-page',
@@ -9,10 +9,11 @@ import * as Aos from 'aos';
 export class AboutPageComponent implements OnInit{
   
   ngOnInit(): void {
-    Aos.init({
+    AOS.init({
       offset: 400,
       duration: 1000
     });
+    window.addEventListener('load', AOS.refresh);
   }
 
   studies = true;
