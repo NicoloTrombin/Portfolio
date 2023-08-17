@@ -29,22 +29,38 @@ export class ProjectsComponent implements OnInit{
       this.showSlides2(this.slideIndex2 = n2);
     }
 
-     showSlides(n : number) {
-       let i;
-       let slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
-       let dots = document.getElementsByClassName("dot") as HTMLCollectionOf<HTMLElement>;
-       if (n > slides.length) {this.slideIndex = 1}
+    //  showSlides(n : number) {
+    //    let i;
+    //    let slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
+    //    let dots = document.getElementsByClassName("dot") as HTMLCollectionOf<HTMLElement>;
+    //    if (n > slides.length) {this.slideIndex = 1}
     
-       if (n < 1) {this.slideIndex = slides.length}
-       for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none";
-       }
-       for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");
-       }
-        slides[this.slideIndex-1].style.display = "block";
-        dots[this.slideIndex-1].className += " active";
-     }
+    //    if (n < 1) {this.slideIndex = slides.length}
+    //    for (i = 0; i < slides.length; i++) {
+    //      slides[i].style.display = "none";
+    //    }
+    //    for (i = 0; i < dots.length; i++) {
+    //      dots[i].className = dots[i].className.replace(" active", "");
+    //    }
+    //     slides[this.slideIndex-1].style.display = "block";
+    //     dots[this.slideIndex-1].className += " active";
+    //  }
+
+    showSlides(n: number) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
+      let dots = document.getElementsByClassName("dot") as HTMLCollectionOf<HTMLElement>;
+      if (n > slides.length) { this.slideIndex = 1 }
+      if (n < 1) { this.slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[this.slideIndex - 1].style.display = "block";
+      dots[this.slideIndex - 1].className += " active";
+    }
 
      showSlides1(n : number) {
       let i;

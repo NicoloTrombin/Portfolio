@@ -135,6 +135,14 @@ img {
     margin-top: .8rem;
 }
 
+/* .prev-next-arrows a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+} */
+
 .dot {
     cursor: pointer;
     height: 15px;

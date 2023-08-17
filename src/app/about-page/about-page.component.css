@@ -127,7 +127,7 @@ section {
 .hline1{
     display: block;
     border-bottom: solid 2px #284184;
-    width: 43.8vw;
+    width: 15rem;
     margin-left: .7rem;
     margin-right: .7rem;
 }
@@ -236,7 +236,7 @@ section {
 
 .jobs-content-header{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center; 
 }
 
