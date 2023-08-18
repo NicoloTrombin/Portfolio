@@ -23,7 +23,8 @@ footer {
     font-size: 1.8rem;
 }
 
-.footer-contact-btn button {
+.footer-contact-btn a {
+    display: inline-block;
     background-color: #284184;
     border-color: transparent;
     border-radius: 5px;
@@ -35,7 +36,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-contact-btn button:hover {
+.footer-contact-btn a:hover {
     transform: scale(1.1);
 }
 

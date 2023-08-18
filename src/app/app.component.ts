@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Personal-Portfolio';
+
+  isPopupVisible: boolean = true;
+
+  tooglePopup() {
+     this.isPopupVisible = !this.isPopupVisible;
+   }
 }

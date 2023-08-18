@@ -62,7 +62,10 @@ section {
     margin-top: 3rem;
 }
 
-.contact-resume-btn button {
+.contact-resume-btn a{
+    display: inline-block; /* or display: block; */
+    width: 180px; /* Set the desired width */
+    text-align: center;
     background:  #284184;
     border-color: transparent;
     border-radius: 5px;
@@ -70,7 +73,6 @@ section {
     font-size: 1.3rem;
     font-weight: 700;
     margin: 1rem;
-    width: 200px;
     transition: all .3s ease-in;
     cursor: pointer;
 }
@@ -79,7 +81,15 @@ section {
     font-size: 1.6rem;
 }
 
-.contact-resume-btn button:hover {
+.bx-cloud-download {
+    transform: translateY(9%);
+}
+
+.bx-paper-plane {
+    font-size: 1.4rem;
+}
+
+.contact-resume-btn a:hover {
     transform: scale(1.1);
 }
 
@@ -146,7 +156,7 @@ section {
     .presentation .position h3 {
         font-size: 1.2rem;
     }
-    .contact-resume-btn button {
+    .contact-resume-btn a {
         display: flex;
         justify-content: center;
         align-items: center;

@@ -3,19 +3,20 @@
     <div class="container" >
         <nav id="nav" class="nav_checkbox">
             <a href="#" class="logo">&#123; nico &#125;</a>
-            <input type="checkbox" id="tab-nav" class="tab-nav">
+            <input type="checkbox" id="tab-nav" class="tab-nav" [(ngModel)]="checkboxValue">
             <label for="tab-nav" class="label">
                 <div id="burg1" class="burger"></div>
                 <div id="burg0" class="burger"></div>
                 <div id="burg2" class="burger"></div>
             </label>
             <ul class="content_nav">
-                <li><a href="#career">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact me</a></li>
+                <li><a href="#career" (click)="toggleCheckbox()">About</a></li>
+                <li><a href="#projects" (click)="toggleCheckbox()">Projects</a></li>
+                <li><a href="#contact-me" (click)="toggleCheckbox()">Contact me</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
 
 

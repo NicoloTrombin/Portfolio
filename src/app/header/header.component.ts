@@ -10,6 +10,7 @@ import { filter } from 'rxjs';
 export class HeaderComponent implements OnInit{
 
   selectedPath = 'home';
+  checkboxValue: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -21,6 +22,11 @@ export class HeaderComponent implements OnInit{
         console.log(this.selectedPath);
       });
   }
+
+  toggleCheckbox() {
+    this.checkboxValue = !this.checkboxValue;
+  }
+
 
   
 }
