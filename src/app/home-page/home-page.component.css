@@ -42,6 +42,7 @@ section {
     background-size:1000%;
     animation:ani 8s linear infinite;
     -webkit-background-clip:text;
+    background-clip: text;
     margin-left: .8rem;
     margin-right: .8rem;
 }
@@ -124,6 +125,13 @@ section {
 
 /* Media Queries */
 
+/* @media(min-height: 500px) {
+    .group {
+        margin-top: 5rem;
+    }
+} */
+
+
 @media(max-width: 1000px) {
     .group {
         position: inherit;
@@ -131,11 +139,19 @@ section {
         justify-content: center;
         flex-direction: row;
         gap: 2rem;
-        transform: translate(0, -250%);
+        transform: translateY(-250%);
     }
     .vl {
         display: none;
     }
+}
+
+@media (max-width: 800px)
+   and (max-height: 780px) {
+        .social-media {
+            transform: translateY(0%);
+            margin-top: 2rem;
+        }
 }
 
 @media(max-width: 468px) {
