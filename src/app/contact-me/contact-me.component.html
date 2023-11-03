@@ -3,11 +3,11 @@
         <div class="contact-me-part1">
             <div class="information">
                 <div class="information-btn">
-                        <p class="typewriter">Contact me.</p> 
+                    <p class="typewriter">Contact me.</p>
                 </div>
                 <div class="information-description">
                     <p>If you want to contact me, you can do it through social networks
-                        or by filling out the contact form. I will do my best to get back to you as soon as possible. 
+                        or by filling out the contact form. I will do my best to get back to you as soon as possible.
                         Thank you!
                     </p>
                 </div>
@@ -20,23 +20,40 @@
             </div>
         </div>
         <div class="contact-me-part2">
-            <form action="https://formsubmit.co/nikitrombin744@gmail.com" method="POST">
+            <form action="javascript:void(0)" (submit)="sendEmail()" [formGroup]="form">
                 <div class="form">
-                    <input type="text" name="name" placeholder="Full name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    <input type="text"
+                           formControlName="from_name"
+                           name="from_name" 
+                           placeholder="Full name" 
+                           required>
+                    <input type="email"
+                           formControlName="from_email" 
+                           name="from_email" 
+                           placeholder="Email" 
+                           required>
+                    <input type="text" 
+                           formControlName="subject"
+                           name="subject" 
+                           placeholder="Subject" 
+                           required>
+                    <textarea rows="5" 
+                              formControlName="message"
+                              name="message" 
+                              placeholder="Message" 
+                              required></textarea>
+
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="box">
                 </div>
                 <div class="form-btn">
                     <button type="submit">
-                        <i class='bx bx-paper-plane'></i>
+                        <i class="bx bx-paper-plane"></i>
                         Send
                     </button>
                 </div>
             </form>
-            
+
         </div>
     </div>
 </section>

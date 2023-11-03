@@ -202,6 +202,9 @@ section {
     .information-email i {
         font-size: 1.8rem;
     }
+    .form-btn button {
+        font-size: 1.1rem;
+    }
 }
 
 

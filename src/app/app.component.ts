@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Personal-Portfolio';
 
-  isPopupVisible: boolean = true;
-
-  tooglePopup() {
-     this.isPopupVisible = !this.isPopupVisible;
-   }
+  ngOnInit(): void {
+    Aos.init({
+      offset: 400,
+      duration: 2000
+    });
+  }
 }

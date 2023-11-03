@@ -12,7 +12,8 @@ export class HeaderComponent implements OnInit{
   selectedPath = 'home';
   checkboxValue: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     this.router.events
@@ -23,9 +24,13 @@ export class HeaderComponent implements OnInit{
       });
   }
 
+
   toggleCheckbox() {
     this.checkboxValue = !this.checkboxValue;
   }
+
+
+
 
 
   

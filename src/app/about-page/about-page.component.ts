@@ -1,33 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about-page',
   templateUrl: './about-page.component.html',
   styleUrls: ['./about-page.component.css']
 })
-export class AboutPageComponent implements OnInit{
+export class AboutPageComponent {
   
-  ngOnInit(): void {
-    AOS.init({
-      offset: 400,
-      duration: 1000
-    });
-    window.addEventListener('load', AOS.refresh);
+  isStudies = true;
+  isJobs = false;
+
+  isStudiesSection() {
+    this.isStudies = !this.isStudies;
+    this.isJobs = !this.isJobs;
   }
 
-  studies = true;
-  jobs = false;
-  
-  studiesShow() {
-    this.studies = true;
-    this.jobs = false;
-
-  }
-
-  jobsShow() {
-    this.studies = false;
-    this.jobs = true;
+  isJobsSection() {
+    this.isJobs = !this.isJobs;
+    this.isStudies = !this.isStudies;
   }
 }
 
