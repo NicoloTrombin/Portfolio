@@ -11,8 +11,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 
-// Import ngxHideOnScrollModule
-import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 // Import Toaster
 import { ToastrModule } from 'ngx-toastr';
 
@@ -34,7 +32,6 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxHideOnScrollModule,
     ToastrModule.forRoot({
       timeOut: 3000,
       preventDuplicates: true,
