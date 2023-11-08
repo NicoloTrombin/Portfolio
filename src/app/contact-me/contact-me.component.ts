@@ -40,10 +40,6 @@ export class ContactMeComponent {
       this.toastr.success('Form has been successfully submitted', '' , { toastClass: 'toast-success'});
     }
       this.form.reset();
-      // this.form.value.from_name = '';
-      // this.form.value.from_email = '';
-      // this.form.value.subject = '';
-      // this.form.value.message = '';
   }
 
 }

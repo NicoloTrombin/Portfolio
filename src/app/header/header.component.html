@@ -1,4 +1,4 @@
-<header style="transition: all 1s ease-in;">
+<header [ngClass]="isNavbarHidden ? 'hidden' : '' " [@hideNavbar]="isNavbarHidden ? 'hidden' : 'visible'">
     
         <div class="container">
         <nav id="nav" class="nav_checkbox">
