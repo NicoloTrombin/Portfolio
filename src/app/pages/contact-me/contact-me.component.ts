@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { EmailJSResponseStatus } from '@emailjs/browser';
 import emailjs from '@emailjs/browser';
 import { ToastrService } from 'ngx-toastr';
+import {TranslateService} from '@ngx-translate/core';
 
 
 @Component({
@@ -12,6 +12,10 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactMeComponent {
 
+  error_message: string = this.translate.instant('error_message');
+  warning_message: string = this.translate.instant('warning_message');
+  success_message: string = this.translate.instant('success_message');
+
   form: FormGroup = this.fb.group({
     from_name: new FormControl('', Validators.required), 
     from_email: new FormControl('', [Validators.required, Validators.email ]) ,
@@ -19,15 +23,19 @@ export class ContactMeComponent {
     message: new FormControl('', Validators.required)
   });
 
-  constructor(private fb: FormBuilder, private toastr: ToastrService) { }
+  constructor(private fb: FormBuilder, private toastr: ToastrService, private translate: TranslateService) { }
 
   sendEmail() {
     if (this.form.value.from_email != '' && this.form.controls['from_email'].errors) {
       this.form.controls['from_email'].setErrors({'incorrect': true});
-      this.toastr.warning('Please enter a valid email address', '', { toastClass: 'toast-warning' });
+      this.translate.get('warning_message').subscribe((res) => {
+        this.toastr.warning(res, '',  { toastClass: 'toast-warning'})
+      })
     } 
     if (this.form.invalid) {
-      this.toastr.error('Please complete all required fields', '' , { toastClass: 'toast-error'});
+      this.translate.get('error_message').subscribe((res) => {
+        this.toastr.error(res, '',  { toastClass: 'toast-error'})
+      })
       return;
     } else {
       emailjs.init('gNFAq2zDWmfLGhzLj');
@@ -37,7 +45,9 @@ export class ContactMeComponent {
         subject: this.form.value.subject,
         message: this.form.value.message
       });
-      this.toastr.success('Form has been successfully submitted', '' , { toastClass: 'toast-success'});
+      this.translate.get('success_message').subscribe((res) => {
+        this.toastr.success(res, '',  { toastClass: 'success-error'})
+      })
     }
       this.form.reset();
   }

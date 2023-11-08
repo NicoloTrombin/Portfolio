@@ -1,0 +1,39 @@
+.countries {
+    display: flex;
+    gap: .5rem;
+    transform: translateY(20%);
+}
+
+.it {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Flag_of_Italy_%28Pantone%2C_2006%29.svg/220px-Flag_of_Italy_%28Pantone%2C_2006%29.svg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: transparent;
+    width: 35px;
+    height: 22.5px;
+    cursor: pointer;
+}
+
+.en {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Union_Jack_1606_Scotland.svg/200px-Union_Jack_1606_Scotland.svg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: transparent;
+    width: 35px;
+    height: 22.5px;
+    cursor: pointer;
+}
+
+.es {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/750px-Flag_of_Spain.svg.png?20140922091435');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: transparent;
+    width: 35px;
+    height: 22.5px;
+    cursor: pointer;
+}
+

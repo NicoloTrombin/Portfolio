@@ -3,18 +3,17 @@
         <div class="contact-me-part1">
             <div class="information">
                 <div class="information-btn">
-                    <p class="typewriter">Contact me.</p>
+                    <p class="typewriter">{{ 'contact' | translate }}.</p>
                 </div>
                 <div class="information-description">
-                    <p>If you want to contact me, you can do it through social networks
-                        or by filling out the contact form. I will do my best to get back to you as soon as possible.
-                        Thank you!
+                    <p>
+                        {{ 'contact_me_message' | translate }}
                     </p>
                 </div>
                 <div class="information-email">
                     <i class='bx bx-envelope'></i>
                     <a href="mailto:nikitrombin744@gmail.com">
-                        <h5>nikitrombin744@gmail.com</h5>
+                        <h5>{{ 'email' | translate }}</h5>
                     </a>
                 </div>
             </div>
@@ -25,22 +24,22 @@
                     <input type="text"
                            formControlName="from_name"
                            name="from_name" 
-                           placeholder="Full name" 
+                           placeholder="{{ 'form_full_name' | translate }}" 
                            required>
                     <input type="email"
                            formControlName="from_email" 
                            name="from_email" 
-                           placeholder="Email" 
+                           placeholder="{{ 'form_email' | translate }}" 
                            required>
                     <input type="text" 
                            formControlName="subject"
                            name="subject" 
-                           placeholder="Subject" 
+                           placeholder="{{ 'form_subject' | translate }}" 
                            required>
                     <textarea rows="5" 
                               formControlName="message"
                               name="message" 
-                              placeholder="Message" 
+                              placeholder="{{ 'form_message' | translate }}" 
                               required></textarea>
 
                     <input type="hidden" name="_captcha" value="false">
@@ -49,7 +48,7 @@
                 <div class="form-btn">
                     <button type="submit">
                         <i class="bx bx-paper-plane"></i>
-                        Send
+                        {{ 'send' | translate }}
                     </button>
                 </div>
             </form>

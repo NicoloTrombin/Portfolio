@@ -15,4 +15,5 @@ export class AppComponent {
       duration: 2000
     });
   }
+
 }

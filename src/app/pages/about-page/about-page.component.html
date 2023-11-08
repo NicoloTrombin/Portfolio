@@ -2,29 +2,28 @@
 <section class="wrapper" id="career">
     <div class="about-me" data-aos="fade-up">
         <div class="about-me-title">
-            <h3>About me</h3>
+            <h3>{{ 'about_me' | translate }}</h3>
         </div>
         <div class="about-me-description">
-            <h5>Who am I ?</h5>
+            <h5>{{ 'who_im_i' | translate }} ?</h5>
         </div>
         <div class="about-me-content">
             <p>
-                <strong style="font-weight: 800;">Software Developer,</strong>
-                passionate about Frontend & Graphic Design.
-                I ❤ creating unique websites that provides a dynamic, intuitive and satisfying user experience.
-                You can see some of my work in the <a href="#projects">projects section</a> <i
+                <strong style="font-weight: 800;">{{ 's_developer' | translate }},</strong>
+                {{ 'passion' | translate }}.
+                {{ 'I' | translate }} ❤ {{ 's_passion' | translate }}.
+                {{ 'some_of_work' | translate }} <a href="#projects">{{ 'projects_section' | translate }}</a> <i
                     class='bx bx-pointer'></i>
             </p>
             <br>
             <p>
-                Well-organised person, problem solver, responsable and commited to my work. I'm constantly learning new
-                technologies and tools to improve my skills.
+                {{ 't_passion' | translate }}.
             </p>
             <br>
             <p>
-                Interested in the entire frontend spectrum and working on ambitious projects with positive people.
+                {{ 'f_passion' | translate }}.
                 <br>
-                <a href="#contact-me">Let's make something special.</a> <i class='bx bx-pointer'></i>
+                <a href="#contact-me">{{ 'lets_make_something_special' | translate }}.</a> <i class='bx bx-pointer'></i>
             </p>
         </div>
     </div>
@@ -35,10 +34,10 @@
     <div class="skills" data-aos="fade-down">
         <div class="skills-header">
             <div class="skills-title">
-                <h3>Skills</h3>
+                <h3>{{ 'skills' | translate }}</h3>
             </div>
             <div class="skills-description">
-                <h5>My knowledge</h5>
+                <h5>{{ 'knowledge' | translate }}</h5>
             </div>
         </div>
         <div class="skills-content">
@@ -47,10 +46,10 @@
                     <i class='bx bx-code-alt'></i>
                 </div>
                 <div class="box-skills">
-                    <button>Angular</button>
-                    <button>TypeScript</button>
-                    <button>Vue Js</button>
-                    <button>JavaScript</button>
+                    <button>{{ 'angular' | translate }}</button>
+                    <button>{{ 'typescript' | translate }}</button>
+                    <button>{{ 'vue' | translate }}</button>
+                    <button>{{ 'javascript' | translate }}</button>
                 </div>
             </div>
             <div>
@@ -58,9 +57,10 @@
                     <i class='bx bx-data'></i>
                 </div>
                 <div class="box-skills">
-                    <button>Java</button>
-                    <button>MySQL</button>
-                    <button>Spring Boot</button>
+                    <button>{{ 'java' | translate }}</button>
+                    <button>{{ 'mysql' | translate }}</button>
+                    <button>{{ 'sql' | translate }}</button>
+                    <button>{{ 'spring_boot' | translate }}</button>
                 </div>
             </div>
             <div class="tools-skills">
@@ -68,11 +68,11 @@
                     <i class='bx bx-wrench'></i>
                 </div>
                 <div class="box-skills">
-                    <button>GitHub</button>
-                    <button>GitLab</button>
-                    <button>Postman</button>
-                    <button>Figma</button>
-                    <button>Scrum</button>
+                    <button>{{ 'github' | translate }}</button>
+                    <button>{{ 'gitlab' | translate }}</button>
+                    <button>{{ 'postman' | translate }}</button>
+                    <button>{{ 'figma' | translate }}</button>
+                    <button>{{ 'scrum' | translate }}</button>
                 </div>
             </div>
         </div>
@@ -83,21 +83,21 @@
         <div class="career" data-aos="fade-up">
             <div class="career-header">
                 <div class="career-title">
-                    <h3>Career</h3>
+                    <h3>{{ 'career' | translate }}</h3>
                 </div>
                 <div class="career-description">
-                    <h5>Studies & Jobs</h5>
+                    <h5>{{ 'studies_jobs' | translate }}</h5>
                 </div>
             </div>
             <div class="career-studies-jobs">
                 <a (click)="isStudiesSection()" [ngClass]="{ 'borderBottom-studies' : isStudies === true }">
                     <i class='bx bxs-graduation'></i>
-                    Studies
+                    {{ 'studies' | translate }}
                     <i class='bx bx-pointer'></i>
                 </a>
                 <a (click)="isJobsSection()" [ngClass]="{ 'borderBottom-jobs' : isJobs === true }">
                     <i class='bx bxs-briefcase'></i>
-                    Jobs
+                    {{ 'jobs' | translate }}
                     <i class='bx bx-pointer'></i>
                 </a>
             </div>
@@ -110,13 +110,13 @@
                         </div>
                         <div class="studies-content-information">
                             <div class="studies-content-title">
-                                <h4>Generation Italy</h4>
+                                <h4>{{ 'study_company1' | translate }}</h4>
                             </div>
                             <div class="studies-content-date">
-                                <h5>Octuber 2022 - February 2023</h5>
+                                <h5>{{ 'study_date1' | translate }}</h5>
                             </div>
                             <div class="studies-content-position">
-                                <h4>Junior Developer</h4>
+                                <h4>{{ 'study_position1' | translate }}</h4>
                             </div>
                         </div>
                     </div>
@@ -127,13 +127,13 @@
                         </div>
                         <div class="studies-content-information">
                             <div class="studies-content-title">
-                                <h4>English Certificate</h4>
+                                <h4>{{ 'study_company2' | translate }}</h4>
                             </div>
                             <div class="studies-content-date">
-                                <h5>February 2019 - November 2019</h5>
+                                <h5>{{ 'study_date2' | translate }}</h5>
                             </div>
                             <div class="studies-content-position">
-                                <h4>C2 Certificate</h4>
+                                <h4>{{ 'studt_position2' | translate }}</h4>
                             </div>
                         </div>
                     </div>
@@ -144,13 +144,13 @@
                         </div>
                         <div class="studies-content-information">
                             <div class="studies-content-title">
-                                <h4>High School</h4>
+                                <h4>{{ 'study_company3' | translate }}</h4>
                             </div>
                             <div class="studies-content-date">
-                                <h5>September 2016 - April 2018</h5>
+                                <h5>{{ 'study_date3' | translate }}</h5>
                             </div>
                             <div class="studies-content-position">
-                                <h4>Social science & Business diploma</h4>
+                                <h4>{{ 'study_position3' | translate }}</h4>
                             </div>
                         </div>
                     </div>
@@ -164,13 +164,13 @@
                         </div>
                         <div class="jobs-content-information">
                             <div class="jobs-content-title">
-                                <h4>Labitech</h4>
+                                <h4>{{ 'job_company1' | translate }}</h4>
                             </div>
                             <div class="jobs-content-date">
-                                <h5>August 2023 - Currently ongoing</h5>
+                                <h5>{{ 'job_date1' | translate }}</h5>
                             </div>
                             <div class="jobs-content-position">
-                                <h4>Software Developer</h4>
+                                <h4>{{ 'job_position1' | translate }}</h4>
                             </div>
                         </div>
                     </div>
@@ -181,13 +181,13 @@
                         </div>
                         <div class="jobs-content-information">
                             <div class="jobs-content-title">
-                                <h4>PC Cube</h4>
+                                <h4>{{ 'job_company2' | translate }}</h4>
                             </div>
                             <div class="jobs-content-date">
-                                <h5>May 2023 - August 2023</h5>
+                                <h5>{{ 'job_date2' | translate }}</h5>
                             </div>
                             <div class="jobs-content-position">
-                                <h4>Full-Stack Developer</h4>
+                                <h4>{{ 'job_position2' | translate }}</h4>
                             </div>
                         </div>
                     </div>
@@ -198,13 +198,13 @@
                         </div>
                         <div class="jobs-content-information">
                             <div class="jobs-content-title">
-                                <h4>Open Market</h4>
+                                <h4>{{ 'job_company3' | translate }}</h4>
                             </div>
                             <div class="jobs-content-date">
-                                <h5>February 2023 - May 2023</h5>
+                                <h5>{{ 'job_date3' | translate }}</h5>
                             </div>
                             <div class="jobs-content-position">
-                                <h4>Junior Developer</h4>
+                                <h4>{{ 'job_position3' | translate }}</h4>
                             </div>
                         </div>
                     </div>

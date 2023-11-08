@@ -2,7 +2,7 @@
     
         <div class="container">
         <nav id="nav" class="nav_checkbox">
-            <a href="#" class="logo">&#123; nico &#125;</a>
+            <a href="#" class="logo">&#123; {{ 'short_name' | translate }} &#125;</a>
             <input type="checkbox" id="tab-nav" class="tab-nav" [(ngModel)]="checkboxValue">
             <label for="tab-nav" class="label">
                 <div id="burg1" class="burger"></div>
@@ -10,9 +10,10 @@
                 <div id="burg2" class="burger"></div>
             </label>
             <ul class="content_nav">
-                <li><a href="#career" (click)="toggleCheckbox()">About</a></li>
-                <li><a href="#projects" (click)="toggleCheckbox()">Projects</a></li>
-                <li><a href="#contact-me" (click)="toggleCheckbox()">Contact me</a></li>
+                <li><a href="#career" (click)="toggleCheckbox()">{{ 'about' | translate }}</a></li>
+                <li><a href="#projects" (click)="toggleCheckbox()">{{ 'projects' | translate }}</a></li>
+                <li><a href="#contact-me" (click)="toggleCheckbox()">{{ 'contact' | translate }}</a></li>
+                <li><app-base-switcher></app-base-switcher></li>
             </ul>
         </nav>
     </div>

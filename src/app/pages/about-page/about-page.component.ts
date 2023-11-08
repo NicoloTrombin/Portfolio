@@ -6,18 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-page.component.css']
 })
 export class AboutPageComponent {
-  
+
   isStudies = true;
   isJobs = false;
 
   isStudiesSection() {
-    this.isStudies = !this.isStudies;
-    this.isJobs = !this.isJobs;
+    this.isStudies = true
+    this.isJobs = false;
   }
 
   isJobsSection() {
-    this.isJobs = !this.isJobs;
-    this.isStudies = !this.isStudies;
+    this.isJobs = true
+    this.isStudies = false;
   }
 }
 

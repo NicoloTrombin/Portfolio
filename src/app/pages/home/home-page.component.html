@@ -1,22 +1,22 @@
 <section class="wrapper">
     <div class="presentation container">
         <div class="hello">
-            <h3>Hi 👋🏻 , I'm</h3>
+            <h3>{{ 'Hello' | translate }} 👋🏻 , {{ 'Im' | translate }}</h3>
         </div>
         <div class="name">
-            <h1>Nicolò <br> Trombin</h1>
+            <h1>{{ 'name' | translate }}<br> {{ 'last_name' | translate }}</h1>
         </div>
         <div class="position">
-            <h3>Software Developer.</h3>
+            <h3>{{ 's_developer' | translate }}.</h3>
         </div>
         <div class="contact-resume-btn buttons">
             <a href="#contact-me">
                 <i class='bx bx-paper-plane'></i>
-                Contact me
+                {{ 'contact' | translate }}
             </a>
             <a href="https://drive.google.com/drive/folders/1kxrnlAaoq2kY2xybdrV3qmdk8k4ShLMm?usp=sharing" target="_blank">
                 <i class='bx bx-cloud-download'></i>
-                Resume
+                {{ 'resume' | translate }}
             </a>
         </div>
     </div>
