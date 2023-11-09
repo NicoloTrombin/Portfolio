@@ -7,17 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AboutPageComponent {
 
-  isStudies = true;
-  isJobs = false;
-
-  isStudiesSection() {
-    this.isStudies = true
-    this.isJobs = false;
-  }
-
-  isJobsSection() {
-    this.isJobs = true
-    this.isStudies = false;
-  }
 }
 

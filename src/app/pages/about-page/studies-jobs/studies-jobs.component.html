@@ -1,0 +1,137 @@
+<section>
+    <!-- Career -->
+    <div class="wrapper2">
+        <div class="career" data-aos="fade-up">
+            <div class="career-header">
+                <div class="career-title">
+                    <h3>{{ 'career' | translate }}</h3>
+                </div>
+                <div class="career-description">
+                    <h5>{{ 'studies_jobs' | translate }}</h5>
+                </div>
+            </div>
+            <div class="career-studies-jobs">
+                <a (click)="isStudiesSection()" [ngClass]="{ 'borderBottom-studies' : isStudies === true }">
+                    <i class='bx bxs-graduation'></i>
+                    {{ 'studies' | translate }}
+                    <i class='bx bx-pointer'></i>
+                </a>
+                <a (click)="isJobsSection()" [ngClass]="{ 'borderBottom-jobs' : isJobs === true }">
+                    <i class='bx bxs-briefcase'></i>
+                    {{ 'jobs' | translate }}
+                    <i class='bx bx-pointer'></i>
+                </a>
+            </div>
+            <div class="career-content">
+                <div class="studies-content" *ngIf="isStudies">
+                    <div class="studies-content-1">
+                        <div class="studies-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline"></div>
+                        </div>
+                        <div class="studies-content-information">
+                            <div class="studies-content-title">
+                                <h4>{{ 'study_company1' | translate }}</h4>
+                            </div>
+                            <div class="studies-content-date">
+                                <h5>{{ 'study_date1' | translate }}</h5>
+                            </div>
+                            <div class="studies-content-position">
+                                <h4>{{ 'study_position1' | translate }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studies-content-2">
+                        <div class="studies-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline"></div>
+                        </div>
+                        <div class="studies-content-information">
+                            <div class="studies-content-title">
+                                <h4>{{ 'study_company2' | translate }}</h4>
+                            </div>
+                            <div class="studies-content-date">
+                                <h5>{{ 'study_date2' | translate }}</h5>
+                            </div>
+                            <div class="studies-content-position">
+                                <h4>{{ 'studt_position2' | translate }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studies-content-3">
+                        <div class="studies-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline"></div>
+                        </div>
+                        <div class="studies-content-information">
+                            <div class="studies-content-title">
+                                <h4>{{ 'study_company3' | translate }}</h4>
+                            </div>
+                            <div class="studies-content-date">
+                                <h5>{{ 'study_date3' | translate }}</h5>
+                            </div>
+                            <div class="studies-content-position">
+                                <h4>{{ 'study_position3' | translate }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jobs-content" *ngIf="isJobs">
+                    <div class="jobs-content-1">
+                        <div class="jobs-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline1"></div>
+                        </div>
+                        <div class="jobs-content-information">
+                            <div class="jobs-content-title">
+                                <h4>{{ 'job_company1' | translate }}</h4>
+                            </div>
+                            <div class="jobs-content-date">
+                                <h5>{{ 'job_date1' | translate }}</h5>
+                            </div>
+                            <div class="jobs-content-position">
+                                <h4>{{ 'job_position1' | translate }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs-content-2">
+                        <div class="jobs-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline1"></div>
+                        </div>
+                        <div class="jobs-content-information">
+                            <div class="jobs-content-title">
+                                <h4>{{ 'job_company2' | translate }}</h4>
+                            </div>
+                            <div class="jobs-content-date">
+                                <h5>{{ 'job_date2' | translate }}</h5>
+                            </div>
+                            <div class="jobs-content-position">
+                                <h4>{{ 'job_position2' | translate }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs-content-3">
+                        <div class="jobs-content-header">
+                            <i class='bx bx-calendar-check'></i>
+                            <div class="hline1"></div>
+                        </div>
+                        <div class="jobs-content-information">
+                            <div class="jobs-content-title">
+                                <h4>{{ 'job_company3' | translate }}</h4>
+                            </div>
+                            <div class="jobs-content-date">
+                                <h5>{{ 'job_date3' | translate }}</h5>
+                            </div>
+                            <div class="jobs-content-position">
+                                <h4>{{ 'job_position3' | translate }}</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

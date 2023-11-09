@@ -19,6 +19,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BaseSwitcherComponent } from './base/base-switcher/base-switcher.component';
+import { SkillsComponent } from './pages/about-page/skills/skills.component';
+import { StudiesJobsComponent } from './pages/about-page/studies-jobs/studies-jobs.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { BaseSwitcherComponent } from './base/base-switcher/base-switcher.compon
     ProjectsComponent,
     ContactMeComponent,
     FooterComponent,
-    BaseSwitcherComponent
+    BaseSwitcherComponent,
+    SkillsComponent,
+    StudiesJobsComponent
   ],
   imports: [
     BrowserModule,
