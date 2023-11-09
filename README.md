@@ -6,4 +6,5 @@ This proyect took me a lot of work and it basically shows & represents my mindse
     portfolio-nicolotrombin1.vercel.app
 
 ⚙️ Tools ⚙️
+
 Developed with Angular 15
