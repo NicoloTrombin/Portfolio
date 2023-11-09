@@ -8,11 +8,14 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class BaseSwitcherComponent {
 
+  selectedLangCode: string = 'en';
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
   }
 
   switchLanguage(language: string) {
     this.translate.use(language);
+    this.selectedLangCode = language;
   }
 }

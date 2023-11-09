@@ -1,6 +1,6 @@
 <div class="countries">
-    <button class="en" (click)="switchLanguage('en')"></button>
-    <button class="it" (click)="switchLanguage('it')"></button>
-    <button class="es" (click)="switchLanguage('es')"></button>
+    <button class="en" (click)="switchLanguage('en')" [ngClass]="{ 'selected': selectedLangCode != 'en' }"></button>
+    <button class="it" (click)="switchLanguage('it')" [ngClass]="{ 'selected': selectedLangCode != 'it' }"></button>
+    <button class="es" (click)="switchLanguage('es')" [ngClass]="{ 'selected': selectedLangCode != 'es' }"></button>
 </div>
 

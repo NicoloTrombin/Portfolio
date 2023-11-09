@@ -39,3 +39,7 @@
     cursor: pointer;
 }
 
+.selected {
+    opacity: .5;
+}
+
