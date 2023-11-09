@@ -3,7 +3,7 @@
 This proyect took me a lot of work and it basically shows & represents my mindset and life story.
 
 📌 Feel free to visit it here:
-    portfolio-nicolotrombin1.vercel.app
+    https://portfolio-nicolotrombin1.vercel.app
 
 ⚙️ Tools ⚙️
 
