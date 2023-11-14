@@ -3,7 +3,8 @@
         <!-- <label>{{selectedLanguage.name}}</label> -->
         <img class="flag" [src]="selectedLanguage.flag" alt="{{selectedLanguage.name}} flag">
     </button>
-    <div class="dropdown-content" [ngStyle]="{ 'display': isDropdownVisible ? 'block' : 'none' }">
+    <div class="dropdown-content" 
+         [ngClass]="{ 'show': isDropdownVisible }">
         <a *ngFor="let language of languages" 
             (click)="selectLanguage(language); toggleDropdown()"
             [ngClass]="{ 'selectedLang' : language === selectedLanguage }">

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as Aos from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,11 @@ import * as Aos from 'aos';
 export class AppComponent {
   title = 'Personal-Portfolio';
 
-  ngOnInit(): void {
-    Aos.init({
-      offset: 400,
-      duration: 2000
-    });
-  }
+  // ngOnInit(): void {
+  //   Aos.init({
+  //     offset: 400,
+  //     duration: 2000
+  //   });
+  // }
 
 }
