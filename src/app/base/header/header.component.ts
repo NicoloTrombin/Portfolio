@@ -13,7 +13,7 @@ import { filter } from 'rxjs';
         top: '0'
       })),
       state('hidden', style({
-        top: '-300px'
+        top: '-500px'
       })),
       transition('visible => hidden', [
         animate('0.6s ease-out')
@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit{
     this.router.events
       .pipe(filter((e) => e instanceof RoutesRecognized))
       .subscribe((val: any) => {
-        this.selectedPath = val.urlAfterRedirects.split('/')[1];;
+        this.selectedPath = val.urlAfterRedirects.split('/')[1];
       });
   }
 

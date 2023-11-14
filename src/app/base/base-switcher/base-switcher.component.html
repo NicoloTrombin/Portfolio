@@ -1,6 +1,14 @@
-<div class="countries">
-    <button class="en" (click)="switchLanguage('en')" [ngClass]="{ 'selected': selectedLangCode != 'en' }"></button>
-    <button class="it" (click)="switchLanguage('it')" [ngClass]="{ 'selected': selectedLangCode != 'it' }"></button>
-    <button class="es" (click)="switchLanguage('es')" [ngClass]="{ 'selected': selectedLangCode != 'es' }"></button>
+<div class="dropdown">
+    <button class="dropbtn" (click)="toggleDropdown()">
+        <!-- <label>{{selectedLanguage.name}}</label> -->
+        <img class="flag" [src]="selectedLanguage.flag" alt="{{selectedLanguage.name}} flag">
+    </button>
+    <div class="dropdown-content" [ngStyle]="{ 'display': isDropdownVisible ? 'block' : 'none' }">
+        <a *ngFor="let language of languages" 
+            (click)="selectLanguage(language); toggleDropdown()"
+            [ngClass]="{ 'selectedLang' : language === selectedLanguage }">
+            <img class="flag" [src]="language.flag" alt="{{language.name}} flag">
+            <label>{{language.name}}</label>
+        </a>
+    </div>
 </div>
-
