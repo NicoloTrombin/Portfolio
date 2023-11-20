@@ -18,7 +18,7 @@ section {
 
 
 .information-btn p {
-    background: #284184;
+    background: var(--primary-color);
     border-color: transparent;
     border-radius: 5px;
     padding: 17px 5px 17px 5px;
@@ -95,7 +95,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 textarea::-webkit-scrollbar-thumb:hover {
-    background-color: #284184;
+    background-color: var(--primary-color);
 }
 
 textarea::-webkit-scrollbar-track {
@@ -116,7 +116,7 @@ textarea::-webkit-scrollbar-track {
     border: 1px solid transparent;
     border-radius: 5px;
     margin-top: .8rem;
-    background-color: #284184;
+    background-color: var(--primary-color);
     font-size: 1.4rem;
     padding: 12px 5px 12px 5px;
     transition: all .3s ease-in;
@@ -139,7 +139,7 @@ textarea::-webkit-scrollbar-track {
     content: '|';
     position: absolute;
     right: 0;
-    background-color: #284184;
+    background-color: var(--primary-color);
     width: 100%;
     animation: typing 3s steps(25) alternate infinite,
         line 1s infinite;

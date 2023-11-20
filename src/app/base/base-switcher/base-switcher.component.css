@@ -56,6 +56,12 @@ a {
   gap: 10px;
 }
 
+label {
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+}
+
 .selectedLang {
   background-color: #383838;
   opacity: .7;

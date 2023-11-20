@@ -25,7 +25,7 @@ footer {
 
 .footer-contact-btn a {
     display: inline-block;
-    background-color: #284184;
+    background-color: var(--primary-color);
     border-color: transparent;
     border-radius: 5px;
     margin-top: 2rem;
@@ -52,7 +52,7 @@ footer {
 .footer-social-media .sm-icons i {
     font-size: 2.5rem;
     margin-top: 2rem;
-    color: #9fd3c7;
+    color: var(--gray);
     transition: all .3s ease-in;
     cursor: pointer;
 }
@@ -66,7 +66,7 @@ footer {
 
 .footer-social-media .sm-icons i:hover {
     transform: scale(1.1);
-    color: #284184;
+    color: var(--primary-color);
 }
 
 .author h4{

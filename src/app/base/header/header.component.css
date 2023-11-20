@@ -4,7 +4,7 @@ header{
     z-index: 4;
     width: 100%;
     background-color: transparent;
-    background-color: #202124;
+    background-color: var(--dark-background);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -39,13 +39,13 @@ header{
 
 .label{
     display: none;
-    color: #e5e7eb;
+    color: var(--secondary-color);
 }
 
 .burger{
     width: 35px;
     height: 5px;
-    background-color: #e5e7eb;
+    background-color: var(--secondary-color);
     margin-top: 5px;
     transition:all 0.5s ease;
 }
@@ -77,14 +77,14 @@ input[type=checkbox]:checked ~ .label #burg2{
 .content_nav li a{
     text-decoration: none;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .content_nav li a::after{
     content: '';
     display: block;
     height: 2px;
-    background-color:#e5e7eb;
+    background-color:var(--secondary-color);
     position: absolute;
     left: 0;
     right: 0;
@@ -122,7 +122,7 @@ input[type=checkbox]:checked ~ .label #burg2{
         max-height: 0;
         overflow: hidden;
         transition: all ease-in-out 0.6s;
-        background-color: #202124;
+        background-color: var(--dark-background);
     }
 
     .nav_checkbox input:checked ~ .content_nav{

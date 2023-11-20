@@ -10,7 +10,7 @@
 /*** Career ***/
 .hline{
     display: block;
-    border-bottom: solid 2px #284184;
+    border-bottom: solid 2px var(--primary-color);
     width: 15rem;
     margin-left: .7rem;
     margin-right: .7rem;
@@ -18,7 +18,7 @@
 
 .hline1{
     display: block;
-    border-bottom: solid 2px #284184;
+    border-bottom: solid 2px var(--primary-color);
     width: 15rem;
     margin-left: .7rem;
     margin-right: .7rem;
@@ -37,7 +37,7 @@
     margin-top: .8rem;
     font-size: 1rem;
     font-weight: 500;
-    color: #9fd3c7;
+    color: var(--gray);
 }
 
 .career-studies-jobs {
@@ -50,8 +50,7 @@
 }
 
 .career-studies-jobs a {
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     transition: all .3s;
 }
 
@@ -60,17 +59,16 @@
 }
 
 .career-studies-jobs .bx-pointer {
-    font-size: 1rem;
-    font-weight: 600;
-    transform: translate(20%, 20%);
+    font-size: .9rem;
+    transform: translate(-10%, 40%);
 }
 
 .career-studies-jobs a:hover .bx {
-    color: #284184 ;
+    color: var(--primary-color) ;
 } 
 
 .career-studies-jobs a:hover {
-    color: #284184;
+    color: var(--primary-color);
 }
 
 .career-content {
@@ -90,8 +88,8 @@
 
 .studies-content-header i{
     font-size: 1.5rem;
-    color: #202124;
-    background-color: #e5e7eb;
+    color: var(--dark-background);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     padding: 7px 7px 7px 7px;
 }
@@ -110,7 +108,7 @@
 .studies-content-information .studies-content-date h5 {
     font-size: .8rem;
     font-weight: 400;
-    color: #9fd3c7;
+    color: var(--gray);
 }
 
 .studies-content-information .studies-content-position h4 {
@@ -118,7 +116,7 @@
 }
 
 .borderBottom-studies {
-    border-bottom: 2px solid #284184;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /*** Jobs Content ***/
@@ -138,8 +136,8 @@
 
 .jobs-content-header i{
     font-size: 1.5rem;
-    color: #202124;
-    background-color: #e5e7eb;
+    color: var(--dark-background);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     padding: 7px 7px 7px 7px;
 }
@@ -158,7 +156,7 @@
 .jobs-content-information .jobs-content-date h5 {
     font-size: .8rem;
     font-weight: 400;
-    color: #9fd3c7;
+    color: var(--gray);
 }
 
 .jobs-content-information .jobs-content-position h4 {
@@ -166,5 +164,5 @@
 }
 
 .borderBottom-jobs {
-    border-bottom: 2px solid #284184;
+    border-bottom: 2px solid var(--primary-color);
 } 

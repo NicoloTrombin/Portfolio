@@ -22,7 +22,7 @@
     margin-top: .8rem;
     font-size: 1rem;
     font-weight: 500;
-    color: #9fd3c7;
+    color: var(--gray);
 }
 
 .skills-content {
@@ -36,7 +36,7 @@
 
 .icon-skills i {
     font-size: 7rem;
-    color: #284184;
+    color: var(--primary-color);
 }
 
 .box-skills button {
