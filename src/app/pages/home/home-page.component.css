@@ -30,8 +30,11 @@ section {
     text-align: center;
     font-size:8rem;
     color:transparent;
-    /* background: linear-gradient(to right, #121FCF, #4545FF, #7C73FF, #969AFF, #D9DAFF, #FFB9AB, #FF9169, #FF662E, #FFF9C2, #FBFF87, #F9FF54, #BFFFA8, #45FF51, #17CF11); */
     background: linear-gradient(to right, #121FCF 0%, #4545FF 8%, #7C73FF 16%, #969AFF 24%, #D9DAFF 32%, #FFB9AB 40%, #FF9169 48%, #FF662E 56%, #FFF9C2 64%, #FBFF87 72%, #F9FF54 80%, #BFFFA8 88%, #45FF51 96%, #17CF11 100%);
+    text-shadow: -1px -1px 0 #fff,  
+               1px -1px 0 #fff,  
+               -1px 1px 0 #fff,  
+               1px 1px 0 #fff;
     background-size:1000%;
     animation:ani 8s linear infinite;
     -webkit-background-clip:text;
@@ -51,6 +54,19 @@ section {
     100%{
     background-position:0 100%;
     }
+}
+
+.name h1 {
+    text-align: center;
+    font-size: 8rem;
+    color: var(--dark-background);
+    text-shadow: -1px -1px 0 #fff,  
+               1px -1px 0 #fff,  
+               -1px 1px 0 #fff,  
+               1px 1px 0 #fff;
+               margin-left: .8rem;
+    margin-right: .8rem;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .buttons {
@@ -204,3 +220,4 @@ section {
         font-size: 4.2rem;
     }
 }
+
