@@ -17,71 +17,38 @@ section {
     align-items: center;
 }
 
-.presentation .hello h3{
+.presentation .hello h3 {
     font-size: 1.5rem;
 }
 
-.presentation .position h3{
+.presentation .position h3 {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
 
-.name h1{
-    text-align: center;
-    font-size:8rem;
-    color:transparent;
-    background: linear-gradient(to right, #121FCF 0%, #4545FF 8%, #7C73FF 16%, #969AFF 24%, #D9DAFF 32%, #FFB9AB 40%, #FF9169 48%, #FF662E 56%, #FFF9C2 64%, #FBFF87 72%, #F9FF54 80%, #BFFFA8 88%, #45FF51 96%, #17CF11 100%);
-    text-shadow: -1px -1px 0 #fff,  
-               1px -1px 0 #fff,  
-               -1px 1px 0 #fff,  
-               1px 1px 0 #fff;
-    background-size:1000%;
-    animation:ani 8s linear infinite;
-    -webkit-background-clip:text;
-    background-clip: text;
-    margin-left: .8rem;
-    margin-right: .8rem;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-}
-
-@keyframes ani{
-    0%{
-    background-position:0 100%;
-    }
-    50%{
-    background-position:100% 0%;
-    }
-    100%{
-    background-position:0 100%;
-    }
-}
-
 .name h1 {
-    text-align: center;
+    /* background: linear-gradient(to right, #121FCF 0%, #4545FF 8%, #7C73FF 16%, #969AFF 24%, #D9DAFF 32%, #FFB9AB 40%, #FF9169 48%, #FF662E 56%, #FFF9C2 64%, #FBFF87 72%, #F9FF54 80%, #BFFFA8 88%, #45FF51 96%, #17CF11 100%); */
+    margin: auto;
     font-size: 8rem;
-    color: var(--dark-background);
-    text-shadow: -1px -1px 0 #fff,  
-               1px -1px 0 #fff,  
-               -1px 1px 0 #fff,  
-               1px 1px 0 #fff;
-               margin-left: .8rem;
-    margin-right: .8rem;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 700;
+    text-align: center;
+
+    animation: lights 5s 750ms linear infinite;
 }
 
 .buttons {
     margin-top: 3rem;
 }
 
-.contact-resume-btn a{
-    display: inline-block; /* or display: block; */
-    width: 180px; /* Set the desired width */
+.contact-resume-btn a {
+    display: inline-block;
+    width: 160px;
     text-align: center;
-    background:  var(--primary-color);
+    background: var(--primary-color);
     border-color: transparent;
     border-radius: 5px;
     padding: 17px 5px 17px 5px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     margin: 1rem;
     transition: all .3s ease-in;
@@ -104,7 +71,6 @@ section {
     transform: scale(1.1);
 }
 
-
 .group {
     display: flex;
     flex-direction: column;
@@ -114,7 +80,7 @@ section {
     gap: 1rem;
 }
 
-.social-media i{
+.social-media i {
     color: var(--gray);
     font-size: 2.7rem;
     margin-right: 2.5rem;
@@ -134,14 +100,6 @@ section {
 }
 
 /* Media Queries */
-
-/* @media(min-height: 500px) {
-    .group {
-        margin-top: 5rem;
-    }
-} */
-
-
 @media(max-width: 1000px) {
     .group {
         position: inherit;
@@ -150,17 +108,17 @@ section {
         flex-direction: row;
         gap: 2rem;
     }
+
     .vl {
         display: none;
     }
 }
 
-@media (max-width: 800px)
-   and (max-height: 780px) {
-        .social-media {
-            transform: translateY(0%);
-            margin-top: 2rem;
-        }
+@media (max-width: 800px) and (max-height: 780px) {
+    .social-media {
+        transform: translateY(0%);
+        margin-top: 2rem;
+    }
 }
 
 @media(max-width: 468px) {
@@ -170,42 +128,49 @@ section {
         justify-content: center;
         align-items: center;
     }
-    .name h1{
+
+    .name h1 {
         font-size: 4.8rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .presentation .hello h3 {
         font-size: 1.2rem;
     }
+
     .presentation .position h3 {
         font-size: 1.2rem;
     }
+
     .contact-resume-btn a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 12px 5px 12px 5px;
         font-size: 1.1rem;
         width: 140px;
     }
+
     .bx {
         font-size: 1.2rem;
-        transform: translate(-20%, 13%); 
+        transform: translate(-20%, 13%);
     }
+
     .buttons {
         margin-top: 1.5rem;
     }
+
     .group {
         all: unset;
     }
+
     .social-media {
         all: unset;
     }
+
     .social-media i {
         margin: 0;
         font-size: 2.2rem;
     }
+
     .social-media {
         display: flex;
         align-items: center;
@@ -215,9 +180,70 @@ section {
     }
 }
 
+@media(max-width: 345px) {
+    .contact-resume-btn a {
+        font-size: 1rem;
+        width: 130px;
+    }
+}
+
 @media(max-width: 280px) {
     .name h1 {
         font-size: 4.2rem;
     }
+    .contact-resume-btn a {
+        width: 110px; 
+    }
+    .contact-resume-btn a i{
+        display: none;
+    }
 }
 
+/* NameTag Animation */
+@keyframes lights {
+    0% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: hsl(230, 100%, 95%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+}
