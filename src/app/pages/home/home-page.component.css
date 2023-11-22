@@ -63,9 +63,6 @@ section {
     transform: translateY(9%);
 }
 
-.bx-paper-plane {
-    font-size: 1.4rem;
-}
 
 .contact-resume-btn a:hover {
     transform: scale(1.1);
@@ -145,7 +142,6 @@ section {
 
     .contact-resume-btn a {
         padding: 12px 5px 12px 5px;
-        font-size: 1.1rem;
         width: 140px;
     }
 
@@ -183,7 +179,19 @@ section {
 @media(max-width: 345px) {
     .contact-resume-btn a {
         font-size: 1rem;
-        width: 130px;
+        width: 120px;
+    }
+    .bx-cloud-download {
+        font-size: 1.1rem
+    }
+    .bx-paper-plane {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 310px) {
+    .contact-resume-btn a {
+        width: 115px;
     }
 }
 
@@ -191,11 +199,12 @@ section {
     .name h1 {
         font-size: 4.2rem;
     }
-    .contact-resume-btn a {
-        width: 110px; 
-    }
     .contact-resume-btn a i{
         display: none;
+    }
+
+    .contact-resume-btn a{
+        width: 108px;
     }
 }
 
